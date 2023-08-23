@@ -647,6 +647,18 @@ body {
   background-color: rgb(34 34 34 / var(--tw-bg-opacity));
 }
 
+.scroll-lock > header {
+  position: sticky !important;
+  top: 0px !important;
+  z-index: 50 !important;
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(34 34 34 / var(--tw-bg-opacity)) !important;
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
 header {
   position: sticky !important;
   top: 0px !important;
@@ -655,6 +667,8 @@ header {
   background-color: rgb(34 34 34 / var(--tw-bg-opacity)) !important;
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 
 .logo > svg {
@@ -871,8 +885,16 @@ button.transparent {
 
 .profile .icon-actions > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0 !important;
-  margin-right: calc(1rem * var(--tw-space-x-reverse)) !important;
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse))) !important;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse)) !important;
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse))) !important;
+}
+
+@media (min-width: 640px) {
+  .profile .icon-actions > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0 !important;
+    margin-right: calc(1rem * var(--tw-space-x-reverse)) !important;
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse))) !important;
+  }
 }
 
 button.icon:hover {
@@ -958,4 +980,27 @@ button:not(.secondary, .back-button, .follow-button) {
 .text iframe,
 .text audio {
   margin: 0px !important;
+}
+
+.link-preview-title > small {
+  --tw-text-opacity: 1 !important;
+  color: rgb(229 231 235 / var(--tw-text-opacity)) !important;
+}
+
+.profile .profile-actions {
+  display: flex !important;
+}
+
+.profile .profile-actions > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0 !important;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse)) !important;
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse))) !important;
+}
+
+@media (min-width: 640px) {
+  .profile .profile-actions > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0 !important;
+    margin-right: calc(1rem * var(--tw-space-x-reverse)) !important;
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse))) !important;
+  }
 }

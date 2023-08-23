@@ -16,8 +16,12 @@ body {
   @apply bg-[#222222];
 }
 
+.scroll-lock > header {
+  @apply sticky top-0 z-50 py-1 px-4 bg-[#222222] !important;
+}
+
 header {
-  @apply sticky top-0 z-50 py-4 bg-[#222222] !important;
+  @apply sticky top-0 z-50 py-4 px-4 bg-[#222222] !important;
 }
 
 .logo > svg {
@@ -151,7 +155,7 @@ button.transparent {
 }
 
 .profile .icon-actions {
-  @apply flex justify-between space-x-4 !important;
+  @apply flex justify-between space-x-1 sm:space-x-4 !important;
 }
 
 button.icon:hover {
@@ -214,4 +218,12 @@ button:not(.secondary, .back-button, .follow-button) {
 .text iframe,
 .text audio {
   @apply m-0 !important;
+}
+
+.link-preview-title > small {
+  @apply text-gray-200 !important;
+}
+
+.profile .profile-actions {
+  @apply flex space-x-1 sm:space-x-4 !important;
 }
