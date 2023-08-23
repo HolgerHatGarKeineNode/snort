@@ -1,6 +1,7 @@
 import "./index.css";
 import "@szhsin/react-menu/dist/index.css";
 import "public/manifest.json";
+import "../dist/output.css";
 
 import { StrictMode } from "react";
 import * as ReactDOM from "react-dom/client";

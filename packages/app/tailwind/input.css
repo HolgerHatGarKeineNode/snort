@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    @apply bg-[#222222] font-sans;
+}
+
+body {
+    @apply font-sans;
+}
+
+#root {
+    @apply bg-[#222222];
+}
+
+header {
+    @apply sticky top-0 z-50 bg-[#222222] !important;
+}
+
+.logo > svg {
+    @apply sticky top-0 z-50 !important;
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url(https://einundzwanzig.space/img/media/einundzwanzig-horizontal-inverted.svg) no-repeat;
+    width: 150px; /* Width of new image */
+    height: 20px; /* Height of new image */
+    padding-left: 180px; /* Equal to width of new image */
+}
+
+.page {
+    @apply container max-w-4xl;
+}
+
+.card {
+    @apply bg-[#1b1b1b] !important;
+}
+
+.reaction-pill {
+    @apply text-amber-700 !important;
+}
+
+.reaction-pill:hover {
+    @apply text-amber-200 !important;
+}
+
+.reaction-pill.reacted {
+    @apply text-amber-500 !important;
+}
+
+.note-create-button {
+    @apply bg-amber-500 !important;
+}
+
+.btn {
+    @apply text-amber-500 !important;
+}
+
+.note-creator-actions {
+    @apply flex justify-between !important;
+}
+
+button.secondary {
+    @apply bg-amber-800 p-2 !important;
+}
+
+.text {
+    @apply sm:text-lg !important;
+}
+
+.expand-note {
+    @apply text-amber-500 !important;
+}
+
+.note.active {
+    @apply border-l-amber-500 !important;
+}
+
+.hashtag {
+    @apply text-amber-500 !important;
+}
+
+.domain {
+    @apply text-amber-500 !important;
+}
+
+.divider-container {
+    @apply bg-amber-500 !important;
+}
+
+.back-button {
+    @apply text-amber-500 !important;
+}
+
+.note > .header .reply a {
+    @apply text-amber-500 !important;
+}
+
+.profile .details a {
+    @apply text-amber-500 !important;
+}
+
+.text > a {
+    @apply text-amber-500 !important;
+}
+
+.dm.me > div:first-child {
+    background: none !important;
+    @apply bg-gradient-to-r from-amber-500 to-pink-500 !important;
+}
+
+.settings-row:hover, .settings-group-header:hover {
+    @apply bg-amber-500 text-white !important;
+}
+
+.dm-window > div:nth-child(3) {
+    @apply bg-amber-500 !important;
+}
+
+.w-max{
+    @apply w-full !important;
+}
+
+input[type="text"], input[type="password"], input[type="number"], select, textarea {
+    width: calc(100% - 24px) !important;
+    @apply p-2 w-full bg-[#1b1b1b] border-amber-500 text-white !important;
+}
+
+.follow-button {
+    @apply bg-amber-500 text-white !important;
+}
+
+button.transparent {
+    @apply p-2 !important;
+}
+
+.text a:hover {
+    text-decoration: none !important;
+}
+
+.profile .banner {
+    @apply max-w-none !important;
+}
+
+.profile .icon-actions {
+    @apply flex justify-between space-x-4 !important;
+}
+
+button.icon:hover {
+    @apply text-black;
+}
+
+button:not(.secondary,.back-button,.follow-button) {
+    @apply py-2 px-4 bg-amber-500 !important;
+}
+
+.latest-notes {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 24px;
+    gap: 8px;
+    position: absolute;
+    width: 261px;
+    left: calc(50% - 261px / 2 + 0.5px);
+    top: 0;
+    color: #fff;
+    background: none;
+    border-radius: 100px;
+    z-index: 42;
+    opacity: 0.9;
+    @apply shadow-lg shadow-amber-500/50 !important;
+}
+
+.note-invoice {
+    @apply bg-amber-500 !important;
+}
+
+.profile .links {
+    @apply flex flex-col space-y-2 !important;
+}
+
+.profile .links > :not([hidden]) ~ :not([hidden]) {
+    @apply flex space-x-2 !important;
+}
+
+.amount-number {
+    @apply text-amber-500 !important;
+}
+
+.relay-settings svg.enabled {
+    @apply text-amber-500 !important;
+}
