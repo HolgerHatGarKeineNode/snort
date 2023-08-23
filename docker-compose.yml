@@ -6,4 +6,4 @@ services:
       - "8500:80"
     restart: always
     volumes:
-      - packages/app/build:/usr/share/nginx/html
+      - ./packages/app/build:/usr/share/nginx/html
