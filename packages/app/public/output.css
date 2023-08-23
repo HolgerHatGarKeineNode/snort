@@ -943,3 +943,17 @@ button:not(.secondary, .back-button, .follow-button) {
   --tw-text-opacity: 1 !important;
   color: rgb(245 158 11 / var(--tw-text-opacity)) !important;
 }
+
+.f-1 {
+  display: flex !important;
+}
+
+.f-grow {
+}
+
+.text img:not(.custom-emoji),
+.text video,
+.text iframe,
+.text audio {
+  margin: 0px !important;
+}
