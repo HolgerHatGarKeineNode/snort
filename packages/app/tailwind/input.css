@@ -16,12 +16,16 @@ body {
   @apply bg-[#222222];
 }
 
+.main-content {
+  @apply pt-6 !important;
+}
+
 .scroll-lock > header {
-  @apply sticky top-0 z-50 py-1 px-4 bg-[#222222] !important;
+  @apply sticky top-0 z-50 py-1 px-4 shadow-lg shadow-amber-500/40 bg-[#222222] !important;
 }
 
 header {
-  @apply sticky top-0 z-50 py-4 px-4 bg-[#222222] !important;
+  @apply sticky top-0 z-50 py-4 px-4 shadow-lg shadow-amber-500/40 bg-[#222222] !important;
 }
 
 .logo > svg {

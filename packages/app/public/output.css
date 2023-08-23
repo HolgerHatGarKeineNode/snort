@@ -647,6 +647,10 @@ body {
   background-color: rgb(34 34 34 / var(--tw-bg-opacity));
 }
 
+.main-content {
+  padding-top: 1.5rem !important;
+}
+
 .scroll-lock > header {
   position: sticky !important;
   top: 0px !important;
@@ -657,6 +661,11 @@ body {
   padding-bottom: 0.25rem !important;
   padding-left: 1rem !important;
   padding-right: 1rem !important;
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+  --tw-shadow-color: rgb(245 158 11 / 0.4) !important;
+  --tw-shadow: var(--tw-shadow-colored) !important;
 }
 
 header {
@@ -669,6 +678,11 @@ header {
   padding-bottom: 1rem !important;
   padding-left: 1rem !important;
   padding-right: 1rem !important;
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+  --tw-shadow-color: rgb(245 158 11 / 0.4) !important;
+  --tw-shadow: var(--tw-shadow-colored) !important;
 }
 
 .logo > svg {
