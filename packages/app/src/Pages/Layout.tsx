@@ -86,9 +86,7 @@ export default function Layout() {
 
   useEffect(() => {
     const osTheme = window.matchMedia("(prefers-color-scheme: light)");
-    setTheme(
-      preferences.theme === "system" && osTheme.matches ? "light" : preferences.theme === "light" ? "light" : "dark"
-    );
+    setTheme("dark");
 
     osTheme.onchange = e => {
       if (preferences.theme === "system") {
