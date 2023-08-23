@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+  snort:
+    build: .
+    ports:
+      - "8500:80"
+    restart: always
