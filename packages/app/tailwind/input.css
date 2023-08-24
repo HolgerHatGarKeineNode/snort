@@ -16,90 +16,100 @@ body {
   @apply bg-[#222222];
 }
 
+.login-container > h1 {
+  font-size: 0 !important;
+}
+
+.logo > h1 {
+  font-size: 0 !important;
+}
+
+header .main-content {
+  @apply sticky top-0 !important;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 50%;
+  height: 64px;
+  background: url(https://einundzwanzig.space/img/media/einundzwanzig-horizontal-inverted.svg) no-repeat;
+  background-size: 200px;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.logo > * {
+  z-index: 100;
+}
+
 .main-content {
   @apply pt-6 !important;
 }
 
-.scroll-lock > header {
-  @apply sticky top-0 z-50 py-1 px-4 shadow-xl shadow-gray-900/40 bg-[#222222] !important;
-}
-
-header {
-  @apply sticky top-0 z-50 py-4 px-4 shadow-xl shadow-gray-900/40 bg-[#222222] !important;
-}
-
-.logo > svg {
-  @apply sticky top-0 z-50 !important;
-  display: block;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background: url(https://einundzwanzig.space/img/media/einundzwanzig-horizontal-inverted.svg) no-repeat;
-  width: 150px; /* Width of new image */
-  height: 20px; /* Height of new image */
-  padding-left: 180px; /* Equal to width of new image */
+.text {
+  @apply text-lg !important;
 }
 
 .page {
-  @apply container max-w-4xl;
+  @apply container max-w-4xl relative;
 }
 
-.card {
+.page > .main-content {
   @apply bg-[#1b1b1b] !important;
 }
 
-.reaction-pill {
-  @apply text-amber-700 !important;
+.card > .footer {
+  @apply py-4 !important;
+}
+
+.card {
+  @apply bg-[#1b1b1b] border-b-[#F59E0BFF] !important;
+}
+
+.profile .profile-actions {
+  @apply flex items-center space-x-4 !important;
+}
+
+.btn:hover {
+  @apply text-amber-500 !important;
+}
+
+button.icon {
+  @apply text-white !important;
 }
 
 .reaction-pill:hover {
-  @apply text-amber-200 !important;
+  @apply text-amber-500 !important;
 }
 
 .reaction-pill.reacted {
   @apply text-amber-500 !important;
 }
 
-.note-create-button {
-  @apply bg-amber-500 !important;
+.profile .banner {
+  @apply w-full max-w-none !important;
 }
 
-.btn {
+.icon {
   @apply text-amber-500 !important;
 }
 
-.note-creator-actions {
-  @apply flex justify-between !important;
-}
-
-button.secondary {
-  @apply bg-amber-800 p-2 !important;
-}
-
-.text {
-  @apply sm:text-lg !important;
-}
-
-.expand-note {
+.profile .link svg {
   @apply text-amber-500 !important;
 }
 
-.note.active {
-  @apply border-l-amber-500 !important;
+.profile .about a {
+  @apply text-amber-500 !important;
+}
+
+.link-preview-title > h1 {
+  @apply text-amber-500 !important;
 }
 
 .hashtag {
-  @apply text-amber-500 !important;
-}
-
-.domain {
-  @apply text-amber-500 !important;
-}
-
-.divider-container {
-  @apply bg-amber-500 !important;
-}
-
-.back-button {
   @apply text-amber-500 !important;
 }
 
@@ -107,30 +117,58 @@ button.secondary {
   @apply text-amber-500 !important;
 }
 
-.profile .details a {
+.note .body > .text > a {
   @apply text-amber-500 !important;
 }
 
-.text > a {
-  @apply text-amber-500 !important;
+.note-invoice {
+  @apply text-white !important;
+  background: linear-gradient(to left bottom, rgb(255, 240, 107), rgb(239, 68, 68), rgb(206, 62, 227)) !important;
+}
+
+.dm-window {
+  @apply overflow-y-auto !important;
 }
 
 .dm.me > div:first-child {
-  background: none !important;
-  @apply bg-gradient-to-r from-amber-500 to-pink-500 !important;
+  @apply bg-none bg-amber-500/20 !important;
 }
 
-.settings-row:hover,
-.settings-group-header:hover {
-  @apply bg-amber-500 text-white !important;
+.w-max {
+  @apply w-full !important;
 }
 
 .dm-window > div:nth-child(3) {
   @apply bg-amber-500 !important;
 }
 
-.w-max {
-  @apply w-full !important;
+.btn-rnd {
+  @apply p-4 !important;
+}
+
+.settings-row:hover,
+.settings-group-header:hover {
+  @apply text-amber-500 !important;
+}
+
+.login-container input[type="password"] {
+  background: var(--gray-superdark) !important;
+}
+
+.profile .profile-wrapper {
+  @apply m-0 px-6 !important;
+}
+
+.highlight {
+  @apply text-amber-500 !important;
+}
+
+.login .login-actions > button {
+  @apply p-2 px-4 bg-amber-500 text-white !important;
+}
+
+.login .login-actions > button:hover {
+  @apply p-2 px-4 bg-amber-300 text-black !important;
 }
 
 input[type="text"],
@@ -138,96 +176,69 @@ input[type="password"],
 input[type="number"],
 select,
 textarea {
-  width: calc(100% - 24px) !important;
-  @apply p-2 w-full bg-[#1b1b1b] border-amber-500 text-white !important;
+  background: var(--gray-superdark);
+  @apply border border-gray-700 text-white !important;
 }
 
-.follow-button {
-  @apply bg-amber-500 text-white !important;
-}
-
-button.transparent {
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
   @apply p-2 !important;
 }
 
-.text a:hover {
-  text-decoration: none !important;
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  @apply p-2 bg-amber-500 text-black !important;
 }
 
-.profile .banner {
-  @apply max-w-none !important;
+.profile-preview {
+  @apply px-4 !important;
 }
 
-.profile .icon-actions {
-  @apply flex justify-between space-x-1 sm:space-x-4 !important;
-}
-
-button.icon:hover {
-  @apply text-black;
-}
-
-button:not(.secondary, .back-button, .follow-button) {
-  @apply py-2 px-4 bg-amber-500 !important;
-}
-
-.latest-notes {
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 6px 24px;
-  gap: 8px;
-  position: absolute;
-  width: 261px;
-  left: calc(50% - 261px / 2 + 0.5px);
-  top: 0;
-  color: #fff;
-  background: none;
-  border-radius: 100px;
-  z-index: 42;
-  opacity: 0.9;
-  @apply shadow-lg shadow-amber-500/50 !important;
-}
-
-.note-invoice {
-  @apply bg-amber-500 !important;
-}
-
-.profile .links {
-  @apply flex flex-col space-y-2 !important;
-}
-
-.profile .links > :not([hidden]) ~ :not([hidden]) {
-  @apply flex space-x-2 !important;
-}
-
-.amount-number {
-  @apply text-amber-500 !important;
-}
-
-.relay-settings svg.enabled {
-  @apply text-amber-500 !important;
+.link-preview-container {
+  @apply mr-12 !important;
 }
 
 .f-1 {
-  @apply flex !important;
+  @apply flex flex-row items-center w-full !important;
 }
 
-.f-grow {
+.cogs {
+  @apply flex flex-row items-center w-full !important;
 }
 
-.text img:not(.custom-emoji),
-.text video,
-.text iframe,
-.text audio {
-  @apply m-0 !important;
+.search {
+  @apply border-2 border-amber-500 !important;
 }
 
-.link-preview-title > small {
-  @apply text-gray-200 !important;
+.note .footer .footer-reactions {
+  @apply w-full flex flex-row items-center justify-between !important;
 }
 
-.profile .profile-actions {
-  @apply flex space-x-1 sm:space-x-4 !important;
+.stream-list {
+  @apply py-4 border border-amber-500 !important;
+}
+
+.dm-page .new-chat {
+  min-width: 0 !important;
+}
+
+.note .header .info {
+  @apply p-4 bg-amber-500 text-black rounded !important;
+}
+
+.info .reaction-pill {
+  @apply text-black !important;
+}
+
+.info .reaction-pill:hover {
+  @apply text-gray-800 !important;
+}
+
+.relay-settings > svg {
+  @apply text-amber-500 !important;
 }
